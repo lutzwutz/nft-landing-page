@@ -1,0 +1,38 @@
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Arvo', serif;
+  --font-code: 'Roboto', monospace;
+  --bg-color: #00163f;
+  --font-color: #ffffff;
+  --btn-bg-color: #ffffff;
+  --accent-color: #fa0808;
+  --header-shadow: #000 0px 0px 5px;
+//second color schema
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Arvo', serif;
+  --font-code: 'Roboto', monospace;
+  --bg-color: #4ABDAC;
+  --font-color: #ffffff;
+  --btn-bg-color: #ffffff;
+  --accent-color: #F7B733;
+  --header-shadow: #000 0px 0px 5px;
+  //third color schema
+  :root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Arvo', serif;
+  --font-code: 'Roboto', monospace;
+  --bg-color: #0e0b16;
+  --font-color: #ffffff;
+  --btn-bg-color: #ffffff;
+  --accent-color: #A239CA;
+  --header-shadow: #000 0px 0px 5px;
+}
+
+  --font-primary: 'Permanent Marker', sans-serif;
+  --font-secondary: 'Kanit', serif;
+  --font-code: 'Permanent Marker', monospace;
+  --bg-color: #4ABDAC;
+  --font-color: #353535;
+  --btn-bg-color: #ffffff;
+  --accent-color: #F7B733;
+  --header-shadow: #000 0px 0px 5px;

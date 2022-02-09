@@ -1,17 +1,17 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --font-primary: 'Permanent Marker', sans-serif;
+  --font-secondary: 'Kanit', serif;
+  --font-code: 'Permanent Marker', monospace;
+  --bg-color: #410027;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --accent-color: #fe0eda;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -35,13 +35,14 @@ body {
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 
 /* HEADER */
 
 header {
   box-shadow: var(--header-shadow);
+  background-color:#91c9c6 
 }
 
 header .container {
@@ -52,7 +53,7 @@ header .container {
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: .5rem;
   align-items: center;
 }
 
@@ -69,7 +70,7 @@ header .container {
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
+  box-shadow: 6px 6px 0 0 var(--accent-color);
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -86,9 +87,22 @@ header .container {
 }
 
 .hero-btn {
+  display: inline-block;
+  line-height: 56px;
+  padding: 0 30px;
+  background: var(--btn-bg-color);
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all .3s ease;
   border-radius: 4px;
-  font-size: 1.2rem;
-  padding: 1.5rem 3rem;
+  box-shadow: 4px 4px 0 0 currentColor;
+}
+
+.btn-space {
+  padding: 8px;
 }
 
 /* COUNTDOWN SECTION */
@@ -97,6 +111,18 @@ section {
   flex: 1 1 auto;
 }
 
+.news-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.news-section ul {
+  display: flex;
+  gap: 2rem
+}
 .countdown {
   display: flex;
   flex-direction: column;
@@ -125,7 +151,7 @@ section {
   width: 100%;
   text-align: center;
   line-height: 1;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4  px 4px 0 0;
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
@@ -143,7 +169,7 @@ section {
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
 }
@@ -162,7 +188,114 @@ section {
   text-align: center;
 }
 
+.news-content h6 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.team-header h2 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: .3rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.team-header p {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  letter-spacing: .4rem;
+  padding: 8px;
+}
+
+/* Two columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+team .container {
+  padding: 0 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats */
+team .container::after, .row::after {
+  content: "";
+  clear: both;
+  background-color: #91c9c6;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-family: var(--font-secondary);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  font-family: var(--font-primary);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #91c9c6;
+}
+
+.card:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 /* MEDIA QUERIES */
+
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -181,3 +314,14 @@ section {
   }
 }
  
+.footer-bottom {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.preview {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
