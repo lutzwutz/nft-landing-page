@@ -8,10 +8,12 @@
   --font-primary: 'Permanent Marker', sans-serif;
   --font-secondary: 'Kanit', serif;
   --font-code: 'Permanent Marker', monospace;
-  --bg-color: #410027;
+  --bg-color: #222256;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #fe0eda;
+  --btn-bg-color-secondary: #ff0ad9;
+  --accent-color: #35cc34;
+  --accent-color-secondary: #ffffff;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -42,7 +44,7 @@ body {
 
 header {
   box-shadow: var(--header-shadow);
-  background-color:#91c9c6 
+  background-color:#030033
 }
 
 header .container {
@@ -77,6 +79,27 @@ header .container {
   outline: none;
 }
 .btn:hover {
+  box-shadow: none;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--btn-bg-color-secondary);
+  color: var(--font-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px 0 0 var(--accent-color-secondary);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+}
+.btn2:hover {
   box-shadow: none;
 }
 
@@ -236,24 +259,23 @@ section {
 }
 
 /* Some left and right padding inside the container */
-team .container {
-  padding: 0 16px;
-  display: block;
+.team-containter {
+  padding: 0 26px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Clear floats */
-team .container::after, .row::after {
-  content: "";
-  clear: both;
-  background-color: #91c9c6;
-  display: table;
+.team-h2 {
+  text-shadow: 2px 2px 0 var(--btn-bg-color-secondary);
+  font-style: italic;
+  margin: .3rem 0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .title {
-  color: grey;
   font-family: var(--font-secondary);
+  text-align: center;
 }
 
 .button {
@@ -262,15 +284,16 @@ team .container::after, .row::after {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
-  font-family: var(--font-primary);
+  background-color: #030033;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
 .button:hover {
-  background-color: #91c9c6;
+  background-color: var(--btn-bg-color-secondary);
 }
 
 .card:hover {
@@ -318,6 +341,7 @@ team .container::after, .row::after {
   font-size: 1rem;
   padding: 1rem;
   text-align: center;
+  font-family: var(--font-secondary);
 }
 
 .preview {
