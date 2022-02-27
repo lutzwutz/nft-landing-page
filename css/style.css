@@ -124,7 +124,26 @@ header .container {
   box-shadow: 4px 4px 0 0 currentColor;
 }
 
-.btn-space {
+.hero-btn2 {
+  display: inline-block;
+  line-height: 56px;
+  padding: 0 30px;
+  background: var(--btn-bg-color);
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all .3s ease;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 0 currentColor;
+}
+
+.btn-space1 {
+  padding: 8px;
+}
+
+.btn-space2 {
   padding: 8px;
 }
 
